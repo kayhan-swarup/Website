@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/facebook_button"
+            android:layout_weight="1"
+            android:layout_width="0px"
+            android:text="FACEBOOK"
+            android:layout_height="50dp" />
+        <TextView
+            android:layout_weight=".5"
+            android:layout_width="0px"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/twitter_button"
+            android:layout_weight="1"
+            android:text="TWITTER"
+            android:layout_width="0px"
+            android:layout_height="50dp" />
+
+
+        </LinearLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@+id/header"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+
+</RelativeLayout>
